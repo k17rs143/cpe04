@@ -167,6 +167,12 @@
       active = true ;
       startTime = new Date();
 
+      if(active == true){
+        var currentTime = new Date();
+        var time = (currentTime - startTime)/1000;
+        $("#time ").html("経過時間："+parseInt(time));
+      }
+
         
         
     }
